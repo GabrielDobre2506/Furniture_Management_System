@@ -13,7 +13,6 @@
 using namespace std;
 #define _CRT_SECURE_NO_WARNINGS
 
-//clasa mobilier
 class Mobilier {
 private:
 	string numeMobilier;
@@ -111,7 +110,7 @@ public:
 };
 
 
-class Magazin {//cerinta 1 - clasa abstracta
+class Magazin {
 private:
 	double profit;
 	double cheltuieli;
@@ -256,12 +255,6 @@ public:
 };
 
 
-
-
-
-
-
-//functii pentru meniu
 class Icons {
 public:
 	void printMenu() {
@@ -407,13 +400,13 @@ public:
 
 };
 
-template<class T>//cerinta 3 - ierarhie
+template<class T>
 class Object {
 private:
 protected:
 public:
 	Object() {}
-	virtual void displayLoginMenu(){}//cerinta 2 - metode virtuale
+	virtual void displayLoginMenu(){}
 	virtual void check(string pa, string us){}
 	~Object(){}
 };
@@ -466,7 +459,7 @@ int main() {
 	string pass;
 	cout << "Adaugati parola: ";
 	cin >> pass;
-	vector<Object<string>*> users;//cerinta 4 - vector de pointeri
+	vector<Object<string>*> users;
 	users.push_back(new User<string>(us, pass));
 	system("cls");
 	users.back()->displayLoginMenu();
