@@ -1,7 +1,7 @@
 /*
 	Nume: Dobre
 	Prenume: Bogdan-Gabriel
-	Tema: Gestiunea unui lant de magazine de parfumuri
+	Tema: Gestiunea unui lant de magazine de mobilier
 */
 #define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
